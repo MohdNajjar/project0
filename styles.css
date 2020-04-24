@@ -1,0 +1,45 @@
+
+
+.home_intro,#services,.back-home-link,.mytable{
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+.CompanyName, .spage-para-header{
+  font-weight: bold;
+  text-decoration: underline;
+  color: Green;
+}
+
+ul{
+  display: table;
+  margin: 0 auto;
+}
+
+.spage{
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.mytable th{
+  background-color: green;
+  color: white;
+  text-align: center;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.mytable tr,td{
+  text-align: center;
+  color: Green;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+table{
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 400px;
+}
