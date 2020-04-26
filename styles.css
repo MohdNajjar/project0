@@ -1,6 +1,11 @@
 
+@media (max-width: 499px){
+  h1::before {
+    content: "Contact";
+  }
+}
 
-.home_intro,#services,.back-home-link,.mytable{
+.home_intro,#services,.back-home-link{
   font-family: Helvetica, sans-serif;
   font-size: 30px;
   text-align: center;
@@ -22,8 +27,8 @@ ul{
   text-align: justify;
   text-justify: inter-word;
 }
-.mytable th{
-  background-color: green;
+th{
+  background-color: Green;
   color: white;
   text-align: center;
   border: 2px solid black;
@@ -32,7 +37,6 @@ ul{
 
 .mytable tr,td{
   text-align: center;
-  color: Green;
   border: 2px solid black;
   padding: 5px;
 }
@@ -41,5 +45,6 @@ table{
   border: 2px solid black;
   border-collapse: collapse;
   width: 50%;
-  margin-left: 400px;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
 }
