@@ -2,33 +2,38 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Green Design</title>
-  <img src="image_logo.png" width="30%">
-  <link rel="stylesheet" href="styles.css">
+  <title>Rise it Green: Contact</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <img src="main_image.png" class="img-fluid" alt="Home image">
   <style>
-  @media print {
-    body {
-      color:Green;
-    }
-    }
-
+  h3,#mytable{
+    text-align: center;
+  }
   </style>
 </head>
 <body>
-  <div class="home_intro"> Contact Information: </div>
-  <div class="home_intro">
-  Email Address: emailaddress@domain.com
-  </div>
-  <div class="home_intro">
-  Tel: +962 6 555 5555
-  </div>
-  <div class="home_intro">
-  Fax: +962 6 555 5555
-  </div>
-  <div class="home_intro">
-  Office Location: 24 Queen Rania Street, Amman, Jordan
-  </div>
-
-  <p class="back-home-link"> <a href="index.html"> Back To Home Page </a></p>
+  <br></br>
+  <br><h3 class="text-secondary">Contact Information:</h3></br>
+  <table id="mytable" class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Email Address</th>
+      <th scope="col">Tel</th>
+      <th scope="col">Fax</th>
+      <th scope="col">Office Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">emailaddress@domain.com</th>
+      <td>+962 6 555 5555</td>
+      <td>+962 6 555 5555</td>
+      <td>@24 Queen Rania Street, Amman, Jordan</td>
+    </tr>
+  </tbody>
+</table>
+  <br></br>
+  <a class="btn btn-primary btn-lg" href="index.html" role="button">Back To Home Page</a>
 </body>
 </html>

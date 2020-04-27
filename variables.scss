@@ -1,0 +1,81 @@
+$header-background-color: #007bff;
+$row-background-color: #ffffff;
+
+%table-header{
+  background-color: $header-background-color;
+  font-size: 17px;
+  font-weight: bold;
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.mycontainer {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.myresponsive-table {
+  li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .mytable-header {
+    @extend %table-header;
+  }
+  .mytable-row {
+    background-color: $row-background-color;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+  .mycol-1 {
+    flex-basis: 10%;
+  }
+  .mycol-2 {
+    flex-basis: 40%;
+  }
+  .mycol-3 {
+    flex-basis: 25%;
+  }
+  .mycol-4 {
+    flex-basis: 25%;
+  }
+
+  @media all and (max-width: 767px) {
+    .mytable-header {
+      display: none;
+    }
+    .mytable-row{
+
+    }
+    li {
+      display: block;
+    }
+    .mycol {
+
+      flex-basis: 100%;
+
+    }
+    .mycol {
+      display: flex;
+      padding: 10px 0;
+      &:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+      }
+    }
+  }
+}
